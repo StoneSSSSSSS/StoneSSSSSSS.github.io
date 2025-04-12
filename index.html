@@ -1,19 +1,33 @@
+<!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
-
-<title>Title of your page here</title>
-
-<script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <title>Loot Log Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+        }
+        iframe {
+            width: 100%;
+            height: 700px;
+            border: none;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+        }
+    </style>
 </head>
 <body>
-Website stuff and things. $$g(r_0)-\frac{1}{2}\Big((r_1-r_0)g'(r_1)-g(r_1)+g(r_0)\Big).$$
-<div id="calculator" style="width: 600px; height: 400px;"></div>
-<script>
-  var elt = document.getElementById('calculator');
-  var calculator = Desmos.GraphingCalculator(elt);
-  calculator.setExpression({ id: '5', latex: '(-\\alpha, 0)', secret: false, color: "RED"});
-</script>
+    <div class="container">
+        <h1>Loot Log Analysis</h1>
+        <iframe src="loot_log_plot.html"></iframe>
+    </div>
+</body>
 </html>
